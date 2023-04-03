@@ -1,10 +1,8 @@
-//inputascii is left in basic functions
 #include <bits/stdc++.h>
 using namespace std;
 
 void push_n_to_stack(int n, string &prev_loc, int &cond,int &max_cond){
 
-    // need to add negative integers as well                        ####  IMPORTANT
     if(n == 0 ){
         cout << prev_loc << ", " << cond << ", rm_1" << endl;
         cout << "rm_1, " << cond << ", rm_2" << endl;
@@ -78,7 +76,7 @@ void push_n_to_stack(int n, string &prev_loc, int &cond,int &max_cond){
         cout << "rm_3, " << cond << ", rm_2" << endl;
         cout << "rm_2, " << cond << ", hall_2" << endl;
         cout << "hall_2, " << cond << ", kd_3" << endl;
-        cout << "kd_3, " << cond << ", kd_2" << endl;  
+        cout << "kd_3, " << cond << ", kd_2" << endl;
         prev_loc = "kd_2";
     }else if(v[0] == 1 && v[1] == 0){
         cout << "hall_2, " << cond++ << ", oat_stage[1]" << endl;
@@ -220,7 +218,8 @@ void rev_swap(int &cond, string &prev_loc, int &max_cond){
     max_cond = max(max_cond, cond);
 }
 
-void pop(int &cond, string &prev_loc, int &max_cond){
+void pop(int &cond, string &prev_loc, int &max_cond)
+{
     cout << prev_loc << "," << cond << ", kd_1" << endl;
     cout << "kd_1, " << cond << ", kd_2" << endl;
     cout << "kd_2, " << cond << ", kd_3" << endl;
@@ -232,7 +231,7 @@ void pop(int &cond, string &prev_loc, int &max_cond){
 
 int main(int argc, char* argv[]){
     freopen(argv[1], "r", stdin);
-    freopen("output.iitktvlr", "w", stdout);
+    freopen("output.iitktv", "w", stdout);
 
     vector<string> stk_code;
     string c;
@@ -250,17 +249,9 @@ int main(int argc, char* argv[]){
     string prev_loc = "oat_stage";
     stack<int> cond_vals;
 
-
     for (string code_word : stk_code) {
         if (code_word[0] == '`') {
             continue;
-        }
-
-        else if (isdigit(code_word[0])) {
-            // can be optimized by checking quantity of operators & numbers being used
-            int num;
-            sscanf(code_word.c_str(), "%d", &num);
-            push_n_to_stack(num,prev_loc,cond,max_cond);
         }
 
         // else if (isdigit(code_word[0])) {
@@ -602,11 +593,11 @@ int main(int argc, char* argv[]){
             cout << "kd_1, " << cond << ", kd_2" << endl;
             // cout << ""
         }
-        
+
         else if (code_word == "quit"){
             break;
         }
-        
+
         // else if (code_word == "pointer"){
         //     cout << prev_loc << ", " << cond << ", events_1" << endl;
         //     cout << "events_1_f, " << cond << ", iit_gate_out_1" << endl;
@@ -617,7 +608,28 @@ int main(int argc, char* argv[]){
         //     max_cond = max(cond, max_cond);
         // }
 
+
+        else {    //if (isdigit(code_word[0])) {
+            // need to add for negative numbers
+            int num;
+            sscanf(code_word.c_str(), "%d", &num);
+            if(num<0){
+                num=-1*num;
+                push_n_to_stack(num,prev_loc,cond,max_cond);
+                cout << prev_loc << ", " << cond << ", southern_labs_2" << endl;
+                cout << "southern_labs_2, " << cond << ", kd_1" << endl;
+                cout << "kd_1, " << cond << ", hall_3" << endl;
+                cout << "hall_3, " << cond << ", mt_1_3" << endl;
+                cout << "mt_1_3, " << cond << ", hall_13_3" << endl;
+                cout << "hall_13_3, " << cond << ", rm_1" << endl;
+                cout << "rm_1, " << cond++ << ", oat_stage[1]" << endl;
+            }
+            else push_n_to_stack(num,prev_loc,cond,max_cond);
+            prev_loc = "oat_stage";
+            max_cond = max(max_cond,cond);
+        }
+
     }
     cout << prev_loc << ", " << cond << ", finish" << endl;
     return 0;
-}   
+}
