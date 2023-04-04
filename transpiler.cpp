@@ -712,8 +712,6 @@ int main(int argc, char* argv[]){
             continue;
         }
 
-        // Added but commented it since the user does not need to enter the input inside every while loop
-
         // else if (isdigit(code_word[0])) {
         //     cout << prev_loc << ", " << cond << ", iit_gate_in_1" << endl;
         //     cout << "iit_gate_in_1, " << cond << ", rm_1" << endl;
@@ -725,77 +723,77 @@ int main(int argc, char* argv[]){
         // }
 
         else if(code_word == "add"){
-            cout << prev_loc << ", " << cond << ", kd_3" << endl;
-            cout << "kd_3, " << cond << ", kd_2" << endl;
-            cout << "kd_2, " << cond << ", kd_1" << endl;
-            cout << "kd_1, " << cond++ << ", oat_stage[1]" << endl;
+            cout << prev_loc << ", " << cond << ", kd_1" << endl;
+            cout << "kd_1, " << cond << ", kd_2" << endl;
+            cout << "kd_2, " << cond << ", kd_3" << endl;
+            cout << "kd_3, " << cond++ << ", oat_stage[1]" << endl;
             cout << "oat_stage, " << cond << ", kd_1" << endl;
             cout << "kd_1, " << cond << ", kd_2" << endl;
             cout << "kd_2, " << cond << ", hall_2" << endl;
             cout << "hall_2, " << cond << ", mt_1_3" << endl;
-            cout << "mt_1_3, " << cond << ", hall_13_2" << endl;
-            cout << "hall_13_2, " << cond << ", hall_13_3" << endl;
-            cout << "hall_13_3, " << cond << ", rm_2" << endl;
-            cout << "rm_2, " << cond << ", rm_1" << endl;
-            cout << "rm_1, " << cond++ << ", oat_stage[1]" << endl;
+            cout << "mt_1_3, " << cond << ", hall_13_3" << endl;
+            cout << "hall_13_3, " << cond << ", hall_13_2" << endl;
+            cout << "hall_13_2, " << cond << ", rm_1" << endl;
+            cout << "rm_1, " << cond << ", rm_2" << endl;
+            cout << "rm_2, " << cond++ << ", oat_stage[1]" << endl;
             prev_loc = "oat_stage";
             max_cond = max(max_cond, cond);
         }
 
         else if(code_word == "sub"){
-            cout << prev_loc << ", " << cond << ", kd_3" << endl;
-            cout << "kd_3, " << cond << ", kd_2" << endl;
-            cout << "kd_2, " << cond << ", kd_1" << endl;
-            cout << "kd_1, " << cond++ << ", oat_stage[1]" << endl;
+            cout << prev_loc << ", " << cond << ", kd_1" << endl;
+            cout << "kd_1, " << cond << ", kd_2" << endl;
+            cout << "kd_2, " << cond << ", kd_3" << endl;
+            cout << "kd_3, " << cond++ << ", oat_stage[1]" << endl;
             cout << "oat_stage, " << cond << ", kd_1" << endl;
             cout << "kd_1, " << cond << ", kd_2" << endl;
             cout << "kd_2, " << cond << ", hall_5" << endl;
             cout << "hall_5, " << cond << ", mt_1_3" << endl;
-            cout << "mt_1_3, " << cond << ", hall_13_2" << endl;
-            cout << "hall_13_2, " << cond << ", hall_13_3" << endl;
-            cout << "hall_13_3, " << cond << ", rm_2" << endl;
-            cout << "rm_2, " << cond << ", rm_1" << endl;
-            cout << "rm_1, " << cond++ << ", oat_stage[1]" << endl;
+            cout << "mt_1_3, " << cond << ", hall_13_3" << endl;
+            cout << "hall_13_3, " << cond << ", hall_13_2" << endl;
+            cout << "hall_13_2, " << cond << ", rm_1" << endl;
+            cout << "rm_1, " << cond << ", rm_2" << endl;
+            cout << "rm_2, " << cond++ << ", oat_stage[1]" << endl;
             prev_loc = "oat_stage";
             max_cond = max(max_cond, cond);
         }
 
         else if(code_word == "mul"){
-            cout << prev_loc << ", " << cond << ", kd_3" << endl;
-            cout << "kd_3, " << cond << ", kd_2" << endl;
-            cout << "kd_2, " << cond << ", kd_1" << endl;
-            cout << "kd_1, " << cond++ << ", oat_stage[1]" << endl;
+            cout << prev_loc << ", " << cond << ", kd_1" << endl;
+            cout << "kd_1, " << cond << ", kd_2" << endl;
+            cout << "kd_2, " << cond << ", kd_3" << endl;
+            cout << "kd_3, " << cond++ << ", oat_stage[1]" << endl;
             cout << "oat_stage, " << cond << ", kd_1" << endl;
             cout << "kd_1, " << cond << ", kd_2" << endl;
             cout << "kd_2, " << cond << ", hall_3" << endl;
             cout << "hall_3, " << cond << ", mt_1_3" << endl;
-            cout << "mt_1_3, " << cond << ", hall_13_2" << endl;
-            cout << "hall_13_2, " << cond << ", hall_13_3" << endl;
-            cout << "hall_13_3, " << cond << ", rm_2" << endl;
-            cout << "rm_2, " << cond << ", rm_1" << endl;
-            cout << "rm_1, " << cond++ << ", oat_stage[1]" << endl;
+            cout << "mt_1_3, " << cond << ", hall_13_3" << endl;
+            cout << "hall_13_3, " << cond << ", hall_13_2" << endl;
+            cout << "hall_13_2, " << cond << ", rm_1" << endl;
+            cout << "rm_1, " << cond << ", rm_2" << endl;
+            cout << "rm_2, " << cond++ << ", oat_stage[1]" << endl;
             prev_loc = "oat_stage";
             max_cond = max(max_cond, cond);
         }
 
         else if(code_word == "div"){
-            cout << prev_loc << ", " << cond << ", kd_3" << endl;
-            cout << "kd_3, " << cond << ", kd_2" << endl;
-            cout << "kd_2, " << cond << ", kd_1" << endl;
-            cout << "kd_1, " << cond++ << ", oat_stage[1]" << endl;
+            cout << prev_loc << ", " << cond << ", kd_1" << endl;
+            cout << "kd_1, " << cond << ", kd_2" << endl;
+            cout << "kd_2, " << cond << ", kd_3" << endl;
+            cout << "kd_3, " << cond++ << ", oat_stage[1]" << endl;
             cout << "oat_stage, " << cond << ", kd_1" << endl;
             cout << "kd_1, " << cond << ", kd_2" << endl;
             cout << "kd_2, " << cond << ", hall_12" << endl;
             cout << "hall_12, " << cond << ", mt_1_3" << endl;
-            cout << "mt_1_3, " << cond << ", hall_13_2" << endl;
-            cout << "hall_13_2, " << cond << ", hall_13_3" << endl;
-            cout << "hall_13_3, " << cond << ", rm_2" << endl;
-            cout << "rm_2, " << cond << ", rm_1" << endl;
-            cout << "rm_1, " << cond++ << ", oat_stage[1]" << endl;
+            cout << "mt_1_3, " << cond << ", hall_13_3" << endl;
+            cout << "hall_13_3, " << cond << ", hall_13_2" << endl;
+            cout << "hall_13_2, " << cond << ", rm_1" << endl;
+            cout << "rm_1, " << cond << ", rm_2" << endl;
+            cout << "rm_2, " << cond++ << ", oat_stage[1]" << endl;
             prev_loc = "oat_stage";
             max_cond = max(max_cond, cond);
         }
-
+        
         else if(code_word == "pop"){
             pop(cond, prev_loc, max_cond);
         }
@@ -806,19 +804,19 @@ int main(int argc, char* argv[]){
 
         else if(code_word == "input"){
             cout << prev_loc << ", " << cond << ", iit_gate_in_1" << endl;
-            cout << "iit_gate_in_1, " << cond << ", rm_3" << endl;
-            cout << "rm_3, " << cond << ", rm_2" << endl;
-            cout << "rm_2, " << cond << ", rm_1" << endl;
-            cout << "rm_1, " << cond++ << ", oat_stage[1]" << endl;
+            cout << "iit_gate_in_1, " << cond << ", rm_1" << endl;
+            cout << "rm_1, " << cond << ", rm_2" << endl;
+            cout << "rm_2, " << cond << ", rm_3" << endl;
+            cout << "rm_3, " << cond++ << ", oat_stage[1]" << endl;
             prev_loc = "oat_stage";
             max_cond = max(max_cond, cond);
         }
 
         else if(code_word == "output"){
-            cout << prev_loc << "," << cond << ", kd_3" << endl;
-            cout << "kd_3, " << cond << ", kd_2" << endl;
-            cout << "kd_2, " << cond << ", kd_1" << endl;
-            cout << "kd_1, " << cond << ", iit_gate_out_1" << endl;
+            cout << prev_loc << "," << cond << ", kd_1" << endl;
+            cout << "kd_1, " << cond << ", kd_2" << endl;
+            cout << "kd_2, " << cond << ", kd_3" << endl;
+            cout << "kd_3, " << cond << ", iit_gate_out_1" << endl;
             cout << "iit_gate_out_1, " << cond << ", hall_13_1" << endl;
             cout << "hall_13_1, " << cond++ << ", oat_stage[1]" << endl;
             prev_loc = "oat_stage";
@@ -826,10 +824,10 @@ int main(int argc, char* argv[]){
         }
 
         else if(code_word == "outputascii"){
-            cout << prev_loc << "," << cond << ", kd_3" << endl;
-            cout << "kd_3, " << cond << ", kd_2" << endl;
-            cout << "kd_2, " << cond << ", kd_1" << endl;
-            cout << "kd_1, " << cond << ", nankari_gate_out_1" << endl;
+            cout << prev_loc << "," << cond << ", kd_1" << endl;
+            cout << "kd_1, " << cond << ", kd_2" << endl;
+            cout << "kd_2, " << cond << ", kd_3" << endl;
+            cout << "kd_3, " << cond << ", nankari_gate_out_1" << endl;
             cout << "nankari_gate_out_1, " << cond << ", hall_13_1" << endl;
             cout << "hall_13_1, " << cond++ << ", oat_stage[1]" << endl;
             prev_loc = "oat_stage";
@@ -841,13 +839,13 @@ int main(int argc, char* argv[]){
             cout << "kd_1, " << cond << ", kd_2" << endl;
             cout << "kd_2, " << cond << ", mt_3_1" << endl;
             cout << "mt_3_1, " << cond << ", mt_2_3" << endl;
-            cout << "mt_2_3, " << cond << ", rm_2" << endl;
-            cout << "rm_2, " << cond << ", rm_1" << endl;
-            cout << "rm_1, " << cond++ << ", oat_stage[1]" << endl;
-            cout << "oat_stage, " << cond << ", rm_3" << endl;
-            cout << "rm_3, " << cond << ", rm_2" << endl;
-            cout << "rm_2, " << cond << ", rm_1" << endl;
-            cout << "rm_1, " << cond++ << ", oat_stage[1]" << endl;
+            cout << "mt_2_3, " << cond << ", rm_1" << endl;
+            cout << "rm_1, " << cond << ", rm_2" << endl;
+            cout << "rm_2, " << cond++ << ", oat_stage[1]" << endl;
+            cout << "oat_stage, " << cond << ", rm_1" << endl;
+            cout << "rm_1, " << cond << ", rm_2" << endl;
+            cout << "rm_2, " << cond << ", rm_3" << endl;
+            cout << "rm_3, " << cond++ << ", oat_stage[1]" << endl;
             prev_loc = "oat_stage";
             max_cond = max(max_cond, cond);
         }
@@ -883,9 +881,9 @@ int main(int argc, char* argv[]){
 
         else if(code_word == "cycle"){
             cout << prev_loc << ", " << cond << ", pronite_1" << endl;
-            cout << "pronite_1, " << cond << ", kd_3" << endl;
-            cout << "kd_3, " << cond << ", kd_1" << endl;
-            cout << "kd_1, " << cond++ << ", oat_stage[1]" << endl;
+            cout << "pronite_1, " << cond << ", kd_1" << endl;
+            cout << "kd_1, " << cond << ", kd_3" << endl;
+            cout << "kd_3, " << cond++ << ", oat_stage[1]" << endl;
             cout << "oat_stage, " << cond << ", events_1" << endl;
             cout << "events_1_f, " << cond << ", mt_3_1" << endl;
             cout << "mt_3_1, " << cond << ", rm_3" << endl;
@@ -944,12 +942,10 @@ int main(int argc, char* argv[]){
         }
 
         else if(code_word == "rev"){
-            // can be done like cycle and rcycle, just saved few lines in traveller with this one
-
             cout << prev_loc << ", " << cond << ", pronite_1" << endl; // added eof in mem1
-            cout << "pronite_1, " << cond << ", kd_3" << endl; // mem1--
-            cout << "kd_3, " << cond << ", kd_1" << endl;
-            cout << "kd_1, " << cond++ << ", oat_stage[1]" << endl;
+            cout << "pronite_1, " << cond << ", kd_1" << endl; // mem1--
+            cout << "kd_1, " << cond << ", kd_3" << endl;
+            cout << "kd_3, " << cond++ << ", oat_stage[1]" << endl;
             cout << "oat_stage, " << cond << ", events_1" << endl; // ---- loop until pointer 1 is at EOF and pointer 3 is at 3 + n+1
             cout << "events_1_f, " << cond << ", mt_3_1" << endl; // mem3=mem1
             cout << "mt_3_1, " << cond << ", rm_3" << endl; // mem3++
@@ -984,11 +980,10 @@ int main(int argc, char* argv[]){
             cout << "rm_1, " << cond << ", airstrip_land_2" << endl;
             cout << "airstrip_land_2, " << cond++ << ", oat_stage[1]" << endl;
             cout << "oat_stage, " << cond << ", events_1" << endl;
-            cout << "events_1_f, " << cond << ", rm_3" << endl;
-            cout << "rm_3, " << cond << ", rm_2" << endl;
-            cout << "rm_2, " << cond << ", rm_1" << endl;
-            cout << "rm_1, " << cond << ", oat_stage[0]" << endl;
-
+            cout << "events_1_f, " << cond << ", rm_1" << endl;
+            cout << "rm_1, " << cond << ", rm_2" << endl;
+            cout << "rm_2, " << cond << ", rm_3" << endl;
+            cout << "rm_3, " << cond << ", oat_stage[0]" << endl;
             // after this loop input will be taken and stored, just need to reverse it now.
             cout << "events_1_t, " << cond++ << ", oat_stage[1]" << endl;
             cout << "oat_stage, " << cond << ", kd_1" << endl; // mem1--
@@ -1019,27 +1014,36 @@ int main(int argc, char* argv[]){
 
         else if(code_word == "mod"){
             int temp_cond = cond;
-            cout << prev_loc << ", " << cond << ", kd_2" << endl;
-            cout << "kd_2, " << cond << ", kd_1" << endl;
-            cout << "kd_1, " << cond++ << ", oat_stage[1]" << endl;
-            cout << "oat_stage, " << cond << ", kd_2" << endl;
-            cout << "kd_2, " << cond << ", kd_1" << endl;
-            cout << "kd_1, " << cond++ << ", oat_stage[1]" << endl;
+            cout << prev_loc << ", " << cond << ", kd_1" << endl;
+            cout << "kd_1, " << cond << ", kd_2" << endl;
+            cout << "kd_2, " << cond++ << ", oat_stage[1]" << endl;
+            cout << "oat_stage, " << cond << ", kd_1" << endl;
+            cout << "kd_1, " << cond << ", kd_2" << endl;
+            cout << "kd_2, " << cond++ << ", oat_stage[1]" << endl;
             cout << "oat_stage, " << cond << ", lecture_hall_gt" << endl;
             cout << "lecture_hall_gt_t, " << cond << ", hall_5" << endl;
             cout << "hall_5, " << cond << ", mt_1_3" << endl;
             cout << "mt_1_3, " << cond << ", oat_stage[0]" << endl;
             cout << "lecture_hall_gt_f, " << cond << ", rm_1" << endl;
-            cout << "rm_1, " << cond << ", hall_13_3" << endl;
-            cout << "hall_13_3, " << cond << ", rm_2" << endl;
-            cout << "rm_2, " << cond << ", hall_13_2" << endl;
+            cout << "rm_1, " << cond << ", hall_13_2" << endl;
             cout << "hall_13_2, " << cond << ", rm_2" << endl;
-            cout << "rm_2, " << cond++ << ", oat_stage[1]" << endl;
+            cout << "rm_2, " << cond << ", hall_13_3" << endl;
+            cout << "hall_13_3, " << cond << ", kd_3" << endl;
+            cout << "kd_3, " << cond++ << ", oat_stage[1]" << endl;
             prev_loc = "oat_stage";
         }
 
         else if(code_word == "not"){
-            Not(cond, prev_loc, max_cond);
+            cout << prev_loc << ", " << cond << ", kd_1" << endl;
+            cout << "kd_1, " << cond << ",southern_labs_2" << endl;
+            cout << "southern_labs_2, " << cond << ", hall_3" << endl;
+            cout << "hall_3, " << cond << ", mt_1_3" << endl;
+            cout << "mt_1_3, " << cond << ", southern_labs_1" << endl;
+            cout << "southern_labs_1, " << cond << ", hall_13_2" << endl;
+            cout << "hall_13_2, " << cond << ", hall_13_3" << endl;
+            cout << "hall_13_3, " << cond << ", rm_1" << endl;
+            cout << "rm_1, " << cond++ << ", oat_stage[1]" << endl;
+            prev_loc = "oat_stage";
         }
 
         else if(code_word == "and"){
@@ -1187,6 +1191,7 @@ int main(int argc, char* argv[]){
 
 
         else {    //if (isdigit(code_word[0])) {
+            // need to add for negative numbers
             int num;
             sscanf(code_word.c_str(), "%d", &num);
             if(num<0){
